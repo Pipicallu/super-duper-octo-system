@@ -1,4 +1,3 @@
-// lib/fetchProducts.js
 export async function getProducts() {
   const url = "http://localhost:3001/graphql";
 
