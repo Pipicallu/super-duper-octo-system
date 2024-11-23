@@ -1,0 +1,6 @@
+.product-footer{
+    background-color: var(--hemocyanin);
+    color: var(--purpleHaze);
+    padding: 16px;
+    font-size: 12px;
+}

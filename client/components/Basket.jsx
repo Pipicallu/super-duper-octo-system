@@ -13,10 +13,10 @@ const BasketIcon = ({items}) => {
       onMouseLeave={() => setHover(false)}
       onTouchStart={() => setHover(!hover)}
     >
-      <a href="/product">
-        <p title='Basket items'>{totalQuantity}</p>
+      <div className="basket-icon">
+       {totalQuantity >=1 && <span title='Basket items' className='basket-notification'>{totalQuantity}</span>}
         <img src="/basket.svg" alt="logo" width={28} height={28} />
-      </a>
+      </div>
       {hover && (
         <div className="basket-preview">
           <ul>

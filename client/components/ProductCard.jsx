@@ -17,11 +17,11 @@ export default function ProductCard({
   return (
     <div className="product-card-wrapper">
       <img
+        className="product-card__image"
         width={400}
         height={400}
         src={image}
         alt={name}
-        className="product-card__image"
       />
       <h2>{name}</h2>
       <p>

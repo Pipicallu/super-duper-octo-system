@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const Specifications = ({ brand, weight, height, width, length, model_code, colour }) => {
   return (
     <div className="product-details">

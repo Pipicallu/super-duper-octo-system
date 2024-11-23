@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer className="product-footer">
       <small>
         Octopus Energy Ltd is a company registered in England and Wales.
         Registered number: 09263424. Registered office: UK House, 5th floor,

@@ -1,0 +1,21 @@
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 100%;
+    width: 100%;
+    padding: 16px;  
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 14px;
+
+    h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
+    tr{
+        line-height: 2;
+    }
+}
