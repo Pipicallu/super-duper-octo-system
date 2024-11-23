@@ -4,7 +4,6 @@ export default function ProductCard({
   name,
   power,
   price,
-  image,
   quantitySoldBy,
   addToCart,
 }) {
@@ -13,16 +12,8 @@ export default function ProductCard({
   const handleAddToCart = () => {
     addToCart({ name, quantity: itemState, price: (price / 100) * itemState });
   };
-  console.log("ProductCard", name, power, price, image, quantitySoldBy);
   return (
-    <div className="product-card-wrapper">
-      <img
-        className="product-card__image"
-        width={400}
-        height={400}
-        src={image}
-        alt={name}
-      />
+    <div className="product-info-wrapper">
       <h2>{name}</h2>
       <p>
         {power} // packet of {quantitySoldBy}

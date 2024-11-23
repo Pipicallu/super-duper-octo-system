@@ -4,5 +4,24 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    max-width: 1600px;
+    min-width: 300px;
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        max-height: 600px;
+        max-width: 600px;
+        border-radius: 31px;
+        padding: 16px;
+        box-sizing: border-box;
+        
+      }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
 };
+
+
 

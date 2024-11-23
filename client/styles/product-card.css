@@ -1,4 +1,4 @@
-.product-card-wrapper{
+.product-info-wrapper{
    padding: 16px;
 }
 
@@ -34,8 +34,3 @@
     font-weight: bold;
 }
 
-.product-card__image{
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}

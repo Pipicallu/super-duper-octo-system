@@ -5,6 +5,7 @@ import "../styles/product-card.css";
 import "../styles/description.css";
 import "../styles/specifications.css";
 import "../styles/footer.css";
+import "../styles/navigation.css";
 
 
 function MyApp({ Component, pageProps }) {

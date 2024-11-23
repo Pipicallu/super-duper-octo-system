@@ -1,4 +1,6 @@
 .description-section{
     background-color: var(--hemocyanin);
-    padding: 0 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
 }

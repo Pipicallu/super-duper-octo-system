@@ -7,7 +7,6 @@ import ProductCard from "../components/ProductCard";
 import Description from "../components/Description";
 import Specifications from "../components/Specifications";
 
-
 const Product = ({ products }) => {
   const [basket, setBasket] = React.useState([]);
   if (!products || products.length === 0) {
@@ -49,33 +48,37 @@ const Product = ({ products }) => {
 
   return (
     <>
-      <div className="Nav">
+      <div className="nav">
         <Image src="/octopus-logo.svg" alt="logo" width={200} height={40} />
         <BasketIcon items={basket} />
       </div>
       <div>
-        <div className="item-wrapper">
+        <div className="item-wrapper">       
+        <img className="product-image" src={image} alt="product" width={400} height={400} />
+          
+         
+          <div className="item-info">
           <ProductCard
-            image={image}
             name={name}
             power={power}
             quantitySoldBy={quantity}
             price={price}
             addToCart={addToCart}
           />
-          <Description description={description} />
-          <Specifications
-            brand={brand}
-            weight={weight}
-            height={height}
-            width={width}
-            length={length}
-            model_code={model_code}
-            colour={colour}
-          />
+            <Description description={description} />
+            <Specifications
+              brand={brand}
+              weight={weight}
+              height={height}
+              width={width}
+              length={length}
+              model_code={model_code}
+              colour={colour}
+            />
+          </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
