@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function ProductCard({
+  id,
   name,
   power,
   price,
@@ -10,7 +11,7 @@ export default function ProductCard({
   const [itemState, setItemState] = React.useState(1);
 
   const handleAddToCart = () => {
-    addToCart({ name, quantity: itemState, price: (price / 100) * itemState });
+    addToCart({ id, name, quantity: itemState, price: (price / 100) * itemState });
   };
   return (
     <div className="product-info-wrapper">

@@ -2,10 +2,12 @@ import React from "react";
 import { getProducts } from "../utils/getProducts";
 import Footer from "../components/Footer";
 import Image from "next/image";
+import { addToCart as addToCartUtil } from "../utils/addToCart";
 import BasketIcon from "../components/Basket";
 import ProductCard from "../components/ProductCard";
 import Description from "../components/Description";
 import Specifications from "../components/Specifications";
+
 
 const Product = ({ products }) => {
   const [basket, setBasket] = React.useState([]);
@@ -14,23 +16,12 @@ const Product = ({ products }) => {
   }
 
   const addToCart = (product) => {
-    if (basket.find((item) => item.name === product.name)) {
-      const updatedBasket = basket.map((item) => {
-        if (item.id === product.id) {
-          return {
-            ...item,
-            quantity: item.quantity + product.quantity,
-            price: item.price + product.price,
-          };
-        }
-        return item;
-      });
-      return setBasket(updatedBasket);
-    }
-    setBasket([...basket, product]);
+    const updatedBasket = addToCartUtil(basket, product);
+    setBasket(updatedBasket);
   };
 
   const {
+    id,
     img_url: image,
     name,
     power,
@@ -59,6 +50,7 @@ const Product = ({ products }) => {
          
           <div className="item-info">
           <ProductCard
+            id={id}
             name={name}
             power={power}
             quantitySoldBy={quantity}
