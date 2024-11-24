@@ -77,8 +77,8 @@ const Product = ({ products }) => {
             />
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };

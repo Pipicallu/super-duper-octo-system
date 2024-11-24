@@ -1,6 +1,19 @@
-.description-section{
-    background-color: var(--hemocyanin);
-    padding: 16px;
-    box-sizing: border-box;
-    width: 100%;
+.description-section {
+  background-color: var(--hemocyanin);
+  padding: 16px;
+  box-sizing: border-box;
+  
+  h2 {
+    font-weight: 400;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    margin: 16px;
+    border-radius: 10px;
+
+    h2 {
+      font-size: 32px;
+    }
+  }
 }

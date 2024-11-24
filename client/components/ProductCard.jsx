@@ -14,8 +14,8 @@ export default function ProductCard({
   };
   return (
     <div className="product-info-wrapper">
-      <h2>{name}</h2>
-      <p>
+      <h2 className="product-name">{name}</h2>
+      <p className="key-specs">
         {power} // packet of {quantitySoldBy}
       </p>
       <div className="add-to-cart">
@@ -37,9 +37,11 @@ export default function ProductCard({
             </button>
           </div>
         </div>
+        <div className="button-container">
         <button className="add-to-cart__btn" onClick={handleAddToCart}>
           Add to cart
         </button>
+        </div>
       </div>
     </div>
   );
