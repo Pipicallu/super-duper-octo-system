@@ -24,7 +24,7 @@ export default function ProductCard({
           <p>Price: £{((price / 100) * itemState).toFixed(2)}</p>
           <div className="quantity">
             <button
-              className="quantity__btn"
+              className={`quantity__btn ${itemState === 1 ? 'quantity__btn--disabled' : ''}`}
               onClick={() => itemState > 1 && setItemState(itemState - 1)}
             >
               -
