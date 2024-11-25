@@ -7,9 +7,17 @@
   justify-content: space-between;
   align-items: center;
 
+  p {
+    font-size: 28px;
+  }
+
   @media (min-width: 768px) {
     font-size: 20px;
   }
+}
+
+.current-quantity {
+  font-size: 28px;
 }
 
 .button-container {
@@ -31,10 +39,10 @@
 }
 
 .quantity__btn {
-  width: 30px;
-  height: 30px;
-  padding: 8px;
-  margin: 0 5px;
+  width: 31px;
+  padding: 5px;
+  margin: 0 8px;
+  font-size: 18px;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -44,8 +52,13 @@
 }
 
 .quantity__btn--disabled {
-  background-color: var(--plum); 
+  background-color: var(--plum);
   color: var(--purpleHaze);
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
 }
 
 .product-name {

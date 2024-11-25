@@ -39,7 +39,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
             >
               -
             </button>
-            <span title="Current quantity">{itemState}</span>
+            <span title="Current quantity" className="current-quantity">{itemState}</span>
             <button
               className="primary-btn quantity__btn"
               onClick={() => setItemState(itemState + 1)}
