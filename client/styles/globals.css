@@ -29,3 +29,21 @@ body {
   height: 100vh;
   margin: 0 auto;
 }
+
+.primary-btn {
+  background-color: var(--sohoLights);
+  color: var(--siphon);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover,
+.primary-btn:active,
+.primary-btn:hover,
+.primary-btn:active {
+    background-color: var(--sohoDarks);
+    color: var(--ice);
+}

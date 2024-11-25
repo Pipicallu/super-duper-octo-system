@@ -28,7 +28,7 @@ const BasketIcon = ({items}) => {
             </li>
             ))}
           </ul>
-          <button className="checkout-btn">Checkout</button>
+          <button className="primary-btn checkout-btn">Checkout</button>
         </div>
       )}
     </div>

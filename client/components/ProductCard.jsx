@@ -24,14 +24,14 @@ export default function ProductCard({
         <p>Price: £{((price / 100) * itemState).toFixed(2)}</p>
           <div className="quantity">
             <button
-              className={`quantity__btn ${itemState === 1 ? 'quantity__btn--disabled' : ''}`}
+              className={`primary-btn quantity__btn ${itemState === 1 ? 'quantity__btn--disabled' : ''}`}
               onClick={() => itemState > 1 && setItemState(itemState - 1)}
             >
               -
             </button>
             <span title="Current quantity">{itemState}</span>
             <button
-              className="quantity__btn"
+              className="primary-btn quantity__btn"
               onClick={() => itemState >= 1 && setItemState(itemState + 1)}
             >
               +
@@ -39,7 +39,7 @@ export default function ProductCard({
           </div>
         </div>
         <div className="button-container">
-        <button className="add-to-cart__btn" onClick={handleAddToCart}>
+        <button className="primary-btn add-to-cart__btn" onClick={handleAddToCart}>
           Add to cart
         </button>
         </div>

@@ -53,12 +53,6 @@
 }
 
 .checkout-btn {
-  background-color: var(--sohoLights);
-  color: var(--siphon);
   width: 100%;
-  border: none;
-  border-radius: 5px;
   padding: 8px;
-  cursor: pointer;
-  font-weight: bold;
 }
