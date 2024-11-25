@@ -31,7 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       </p>
       <div className="add-to-cart">
         <div className="price-and-quantity">
-          <p>Price: £{((price / 100) * itemState).toFixed(2)}</p>
+          <p>£{((price / 100) * itemState).toFixed(2)}</p>
           <div className="quantity">
             <button
               className={`primary-btn quantity__btn ${itemState === 1 ? 'quantity__btn--disabled' : ''}`}
