@@ -21,7 +21,7 @@ export default function ProductCard({
       </p>
       <div className="add-to-cart">
         <div className="price-and-quantity">
-          <p>Price: £{((price / 100) * itemState).toFixed(2)}</p>
+        <p>Price: £{((price / 100) * itemState).toFixed(2)}</p>
           <div className="quantity">
             <button
               className={`quantity__btn ${itemState === 1 ? 'quantity__btn--disabled' : ''}`}

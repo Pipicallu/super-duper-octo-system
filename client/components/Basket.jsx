@@ -24,7 +24,7 @@ const BasketIcon = ({items}) => {
             <li key={item.id}>
                 item: {item.name}
                 <p >Qty: {item.quantity}</p>
-                <p>Price: £{item.price}</p>
+                <p>Price: £{item.price.toFixed(2)}</p>
             </li>
             ))}
           </ul>
