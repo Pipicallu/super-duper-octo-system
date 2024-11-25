@@ -35,7 +35,7 @@ const BasketIcon: React.FC<BasketIconProps> = ({ items }) => {
           <ul>
             {items.map((item) => (
               <li key={item.id}>
-                item: {item.name}
+                Item: {item.name}
                 <p>Qty: {item.quantity}</p>
                 <p>Price: £{item.price.toFixed(2)}</p>
               </li>
