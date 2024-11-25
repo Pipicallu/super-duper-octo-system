@@ -1,4 +1,13 @@
-export async function getProducts() {
+import type {ProductTypes} from "../types/product";
+
+interface GraphQLResponse {
+  data: {
+    allProducts: ProductTypes[];
+  };
+  errors?: { message: string }[];
+}
+
+export async function getProducts(): Promise<ProductTypes[]> {
   const url = "http://localhost:3001/graphql";
 
   const query = `
@@ -35,7 +44,7 @@ export async function getProducts() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const result = await response.json();
+    const result: GraphQLResponse = await response.json();
 
     if (result.errors) {
       throw new Error(

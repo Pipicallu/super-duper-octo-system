@@ -1,8 +1,24 @@
 import React from 'react';
 
+interface SpecificationsProps {
+  brand: string;
+  weight: number;
+  height: number;
+  width: number;
+  length: number;
+  model_code: string;
+  colour: string;
+}
 
-
-const Specifications = ({ brand, weight, height, width, length, model_code, colour }) => {
+const Specifications: React.FC<SpecificationsProps> = ({
+  brand,
+  weight,
+  height,
+  width,
+  length,
+  model_code,
+  colour,
+}) => {
   return (
     <div className="product-details">
       <h2>Specifications</h2>

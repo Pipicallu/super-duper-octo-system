@@ -1,6 +1,7 @@
 import { render, fireEvent } from "@testing-library/react";
 import Product from "../pages/product";
 
+
 const products = [
   {
     id: 1,

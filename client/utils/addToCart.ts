@@ -1,4 +1,11 @@
-export const addToCart = (basket, product) => {
+interface Product {
+  id: number;
+  name: string;
+  quantity: number;
+  price: number;
+}
+
+export const addToCart = (basket: Product[], product: Product): Product[] => {
   let productExists = false;
 
   const updatedBasket = basket.map((item) => {
