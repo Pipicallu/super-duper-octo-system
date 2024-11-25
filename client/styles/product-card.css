@@ -43,14 +43,6 @@
   }
 }
 
-.primary-btn:hover,
-.primary-btn:active,
-.primary-btn:hover,
-.primary-btn:active {
-    background-color: var(--sohoDarks);
-    color: var(--ice);
-}
-
 .quantity__btn--disabled {
   background-color: var(--plum); 
   color: var(--purpleHaze);
